@@ -9,3 +9,5 @@ def  triangle(width, h):
 for item in range(10):
         print(rectangle(item,item))
 
+        
+

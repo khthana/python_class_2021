@@ -7,34 +7,45 @@ for <variable> in <sequence>:
 for i in range(10):
    print(i)
 
-'''
-range เป็นฟังก์ชันที่มีรูปแบบ range(start, stop, step)
-
-'''
+"""
+* range เป็นฟังก์ชันที่มีรูปแบบ range(start, stop, step)
+* • for k in range(10) : k = 0, 1, 2, ..., 9
+* • for k in range(2,10) : k = 2, 3, 4, ..., 9
+* • for k in range(2,10,2) : k = 2, 4, 6, 8
+* • for k in range(10,1,-2) : k = 10, 8, 6, 4, 2
+* • for k in range(11,11) : ไม่ทำ เพราะ step เป็นบวก และ start >= stop
+* • for k in range(9,10,-1) : ไม่ทำ เพราะ step ติดลบ และ start <= stop
+! range จะไม่รวมตัวสุดท้าย for k in range(1,5) k = 1,2,3,4
+"""
 x = range(3, 6)
 for n in x:
-  print(n)
+    print(n)
 
 x = range(3, 20, 2)
 for n in x:
-  print(n)
+    print(n)
 
 
-#ให้เขียนโปรแกรมแสดงสูตรคูณ 
+#|ให้เขียนโปรแกรมแสดงสูตรคูณ 
 num = int(input("Enter th number of multiplication = "))
 
 # use for loop to iterate 12 times
 for i in range(1, 13):
-   print(num,'x',i,'=', num*i)
+    print(num,'x',i,'=', num*i)
+    #print(f'{num} x {i:3} = {num*i}')
 
-# โปรแกรมแสดงผลรวมตั้งแต่ 1-n
+#| ให้เขียนโปรแกรมแสดงตารางเทียบอุณหภูมิระหว่าง C กับ F 
+#| F= C/5*9+32
+
+
+#| โปรแกรมแสดงผลรวมตั้งแต่ 1-n
 n = int(input("Enter your number: "))
 sum = 0
 for i in range(1, n+1):
     sum = sum + i
 print("Sum from 1 to %d" %n ," = ", sum)
 
-
+# ให้เขียนโปรแกรมคำนวณ Factorial
 '''
 ถ้าจะใช้ range สร้าง list ที่เป็นตัวเลขที่เป็นลำดับสามารถทำได้โดย
 list(range(begin,end))
@@ -46,6 +57,8 @@ even_numbers = list(range(2,11,2))
 print(even_numbers)
 
 #----------------------------------------
+# การใช้ Loop กับ List
+
 DayOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
 day = input("Enter the date: ")
 for day_x in DayOfWeek:
@@ -54,6 +67,17 @@ for day_x in DayOfWeek:
         break
     else:
         print("Not found :", day_x)
+        
+
+# เขียนได้อีกแบบ
+DayOfWeek = ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"]
+day = input("Enter the date: ")
+for day_x in range(len(DayOfWeek)):
+    if day == DayOfWeek[day_x]:
+        print("Found : ", DayOfWeek[day_x])
+        break
+    else:
+        print("Not found :", DayOfWeek[day_x])
 
 #----โปรแกรมนี้เป็นโปรแกรมทำอะไร
 n = int(input("Enter integer number: "))
@@ -64,6 +88,7 @@ for i in range(2, n + 1):
     else:
         Sum = Sum + i
 print("Sum  = ", Sum)
+
 #------โปรแกรมนี้ทำอะไร
 n = int(input("Enter number :"))
 for i in range(2, n):
@@ -83,24 +108,50 @@ for i in lst:
 result = sum / n
 print("Average = %.2f" %result)
 
-'''
+"""
+การวน Loop ใน String 
+ต้องการนับว่าสตริง s มีตัวเลขกี่ตัว
+c = 0
+for e in s :
+    if '0' <= e <= '9' :
+        c += 1
+
+* Ex จงเขียนโปรแกรมที่นับว่าสตริง s มีตัวที่ติดกันเป็นตัวเลขทั้งคู่อยู่กี่คู่
+
+
+"""
+for k in range(len(s)-1) : # ต้องการตัวติดกัน จึงวนถึงตัวรองสุดท้าย
+    if '0' <= s[k] <= '9' and '0' <= s[k+1] <= '9' :
+        c += 1
+"""
 ในการวน loop บางครั้งเราต้องการให้ข้ามไป 
 จะใช้ pass ดังตัวอย่าง
-'''
+"""
+
 for letter in 'Python': 
-   if letter == 'h':
-      pass
-      #print ("This is pass block")
-   else:
-       print ("Current Letter :", letter)
+    if letter == 'h':
+        pass
+        #print ("This is pass block")
+    else:
+        print ("Current Letter :", letter)
+
+"""
+การออกจาก Loop จะใช้ break
+for i in range(5):
+    for j in range(6):
+        if condition1 :
+            break # break นี้ออกจาก for j
+    if condition2 :
+        break # break นี้ออกจาก for i
+"""
 
 
 #โปรแกรมที่สร้าง List ที่เป็นยกกำลัง 2
 squares = []
 for value in range(1,11):
- square = value**2
- squares.append(square)
- print(squares)
+    square = value**2
+    squares.append(square)
+    print(squares)
 
 # โปรแกรมข้างต้น จะเขียนให้สั้นลงอย่างหรือไม่
 

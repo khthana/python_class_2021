@@ -1,5 +1,5 @@
-'''
-คำสั่ง if  ใช้ในการกำหนดเงื่อนไขการทำงาน 
+"""
+*คำสั่ง if  ใช้ในการกำหนดเงื่อนไขการทำงาน 
 
 if condition:
     statement
@@ -16,13 +16,13 @@ elif condition:
 else:
     statement
 
-operator ที่ใช้ใน condition ==, !=, >, >=, <, <=
-'''
+* operator ที่ใช้ใน condition ==, !=, >, >=, <, <=
+"""
+
 temp = input("กรุณาป้อนจำนวนเต็ม =") 
 N = int(temp)
 if (N % 2) == 0:
     print("เลขคู่")
-    
 print("ไม่ทำอะไร")
 
 #----------------------------------------------
@@ -33,5 +33,13 @@ if num % 2 == 0:
 else:
     print(num, "is an odd number")
 
+#----------------------------------------------
 
+num = 0
+if num == 0:
+    print("Zero Number")
+elif num < 0:
+    print("Negative number")
+else:
+    print ("Positive Number")
 
