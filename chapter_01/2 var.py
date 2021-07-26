@@ -1,3 +1,4 @@
+#%%
 """
 * ตัวแปรมี 4 ชนิด คือ string, int, float, boolean 
 """
@@ -9,12 +10,15 @@ print(message)
 a = "hello"     #! String
 print(a)
 print(type(a))
+
 a = 10          #! integer
 print(a)
 print(type(a))
+
 a = 10.0        #! Float
 print(a)
 print(type(a))
+
 a = True        #! boolean
 print(a)
 print(type(a))
@@ -43,3 +47,6 @@ Snake Case แทนที่จะแบ่งคำด้วยตัวอั
 
 !และควรตั้งชื่อให้ยาวพอที่จะสื่อความหมาย
 """
+
+#* Ex.1 ให้ตั้งตัวแปร 3 ตัว เป็นชนิด Int, Float และ String 
+

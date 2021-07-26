@@ -1,4 +1,4 @@
-# เป็น comment แบบ 1 บรรทัด ขึ้นต้นด้วย %
+# เป็น comment แบบ 1 บรรทัด ขึ้นต้นด้วย #
 # Say hello to everyone.
 print("Hello Python people!")
 

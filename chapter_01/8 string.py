@@ -35,7 +35,12 @@ s[::3] = '0369'
 s[::-2] = '97531'
 """
 
-#* Ex.จงหา s[-1:2:-2] จากรหัสนักศึกษาของตัวเอง 
+#| Ex.จงหา s[-1:2:-2] จากรหัสนักศึกษาของตัวเอง 
+
+#| Ex. s = "ABCDEFG" จงหา
+#| s[::-1]
+#| s[-1::-1]
+#| s[-1:-(len(s)+1):-1]
 
 #* operator in กับ string
 #* 'k' in "kmitl"
@@ -74,3 +79,11 @@ print('s1.join(s2):', s1.join(s2))
 # each element of s1 is separated by s2
 # 'a'+ '123'+ 'b'+ '123'+ 'b'
 print('s2.join(s1):', s2.join(s1))
+
+
+
+#* k = s.find(c) คืน index น้อยสุดที่พบ c ใน s 
+#* เริ่มต้นตั้งแต่ index 0 ถ้าไม่พบ จะได้ผลเป็น -1
+#* k = "engineering".find("ng") ; k=1
+#* k = s.find(c,j) คืน index น้อยสุดที่พบ c ใน s เริ่มค้นตั้งแต่ index j เป็นต้นไป
+#* if c in s เหมือนกับ if s.find(c) >= 0
