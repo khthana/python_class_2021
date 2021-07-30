@@ -23,8 +23,27 @@ print(f"Hello, {full_name}!")
 #| Ex 1.14 ให้คำนวณว่าโปรโมชั่น มา 4 จ่าย 3 จะจ่ายเท่าไร
 #| ให้รับ จำนวนเงินต่อหัว และ จำนวนคนที่ไป 
 
+#---------------------------------------------
+#* ในการพิมพ์เราสามารถจัดรูปแบบการพิมพ์ได้ เพื่อความสวยงาม
+#---------------------------------------------
 
+print("{}{}".format("th", "Thailand"))
+print("{:5}|{:15}|".format("th", "Thailand"))    # align left
+print("{:<5}|{:<15}|".format("th", "Thailand"))    # align left
+print("{:>5}|{:>15}|".format("th", "Thailand"))  # align right
+print("{:*>5}|{:->15}|".format("th", "Thailand"))  # align right
+print("{:^5}|{:^15}|".format("th", "Thailand"))  # align center
 
+#---------------------------------------------
+#* แบบใช้ f-string
+#---------------------------------------------
+
+print(f'{"th"}{"Thailand"}')
+print(f'{"th":5}|{"Thailand":15}|')
+print(f'{"th":<5}|{"Thailand":<15}|')
+print(f'{"th":>5}|{"Thailand":>15}|')
+print(f'{"th":*>5}|{"Thailand":->15}|')
+print(f'{"th":^5}|{"Thailand":^15}|')
 
 #---------------------------------------------
 #* คำสั่ง print มี option อื่นๆ เช่น seperator, end
