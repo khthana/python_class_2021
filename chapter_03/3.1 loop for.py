@@ -119,7 +119,11 @@ print("Sum from 1 to %d" %n ," = ", sum)
 
 #| Ex 3.6 ให้เขียนโปรแกรมคำนวณ Factorial
 #|        Factorial 5 = 5x4x3x2x1
-
+n = int(input("Enter your number: "))
+sum = 1
+for i in range(1, n+1):
+    sum = sum * i
+print("Factorial of %d" %n ," = ", sum)
 
 #-------------------------------------------
 
@@ -162,8 +166,8 @@ for i in range(2, n):
     if n % i == 0:
         print(n,"is not a prime")
         break
-else:
-    print(n, "is a prime")
+    else:
+        print(n, "is a prime")
 
 #---------------------------------------------------
 #* ถ้าจะใช้ range สร้าง list ที่เป็นตัวเลขที่เป็นลำดับสามารถทำได้โดย
