@@ -123,7 +123,7 @@ Average_each_year = []
 
 for i in stds_height:   # list of each year 
     sum = 0
-    for j in i:         # each student
+    for j in i:         # each student [125, 130, 142, 135, 145]
         sum = sum + j
     average = sum / len(i)
     Average_each_year.append(average)
