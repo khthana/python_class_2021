@@ -19,7 +19,7 @@ print(name.lower())
 #* lstrip() ตัดช่องว่าง หน้า
 #---------------------------------------------------
 
-favorite_language = 'python '
+favorite_language = 'python ' 
 print(favorite_language+':')
 print(favorite_language.rstrip()+':')
 
@@ -46,7 +46,7 @@ print(int("10",base=2))     # 2
 #* การแปลงค่าจาก int เป็น str
 #---------------------------------------------------
 num = 123
-print(num)         # '123'
+print(str(num))         # '123'
 
 #---------------------------------------------------
 #* สามารถนำตัวแปรมาแสดงผลหลายครั้งก็ได้
