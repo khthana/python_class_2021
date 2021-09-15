@@ -32,7 +32,7 @@ def determine_winner(user_action, computer_action):
         Action.Scissors: [Action.Paper]  # Scissors beats paper
     }
 
-    defeats = victories[user_action]
+    defe2ats = victories[user_action]
     if user_action == computer_action:
         print(f"Both players selected {user_action.name}. It's a tie!")
     elif computer_action in defeats:

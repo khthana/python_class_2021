@@ -15,7 +15,7 @@ def devide(n1, n2):
 #| Ex 6.2 ให้สร้าง dictionary ชื่อ operations
 #| ที่ใช้ key เป็นสัญญลักษณ์ + - * / และใช้ฟังก์ชันเป็น value
 
-operations = {}
+operations = {'+':add,}
 
 
 num1 = int(input("What's the first number? : "))

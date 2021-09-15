@@ -13,4 +13,4 @@ possible_actions = ["rock", "paper", "scissors"]
 computer_action = random.choice(possible_actions)
 
 #TODO-4: แสดงผลว่าผู้เล่นเลือกอะไร และ คอมพิวเตอร์เลือกอะไร 
-print(f"\nYou chose {user_action}, computer chose {computer_action}.\n")
+print(f"\nYou choose {user_action}, computer choose {computer_action}.\n")
