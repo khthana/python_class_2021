@@ -46,7 +46,6 @@
 
 
 
-
 ### ตัวอย่างการทำงาน 
 # Do you want to play a game of Blackjack? Type 'y' or 'n': y
 #    Your cards: [10, 10], current score: 20
@@ -67,3 +66,11 @@
 # Draw 🙃
 # Do you want to play a game of Blackjack? Type 'y' or 'n': 
 
+
+"Draw 🙃"
+"Lose, opponent has Blackjack 😱"
+"Win with a Blackjack 😎"
+"You went over. You lose 😭"
+"Opponent went over. You win 😁"
+"You win 😃"
+"You lose 😤"
