@@ -33,9 +33,9 @@ HARD_LEVEL_TURNS = 5
 def set_difficulty():
     level = input("Choose a difficulty. Type 'easy' or 'hard': ")
     if level == "easy":
-        return 10
+        return EASY_LEVEL_TURNS
     else:
-        return 5
+        return HARD_LEVEL_TURNS
 
 #| Step 4 : เขียน fn : ตรวจคำตอบว่าถูกหรือไม่
 #|          พารามิเตอร์ : ตัวเลขที่ทาย, คำตอบ, จำนวนครั้งคงเหลือ 
@@ -43,7 +43,7 @@ def set_difficulty():
 #|          การทำงานย่อย : 
 #|              ถ้าตัวเลขที่ทาย > คำตอบ แสดง Too high.
 #|              ถ้าตัวเลขที่ทาย < คำตอบ แสดง Too low.
-#|              else แสดง You got it! The answer was answer
+#|              else แสดง You got it! The answer was "answer"
 
 def check_answer(guess, answer, turns):
     """checks answer against guess. Returns the number of turns remaining."""
